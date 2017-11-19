@@ -1,0 +1,44 @@
+@charset "utf-8";
+/*main.css - start*/
+blockquote,body,dd,div,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:400;font-size:100%}
+address,caption,cite,code,dfn,em,th,var{font-weight:400;font-style:normal}
+table{border-collapse:collapse;border-spacing:0}
+abbr,acronym,fieldset,img{border:0}
+input,select,textarea{font-family:Verdana,Arial,Helvetica,sans-serif;font-size:12px}
+caption,th{text-align:left}
+q:after,q:before{content:''}
+dl,li,ol,ul{list-style:none}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+.clearfix{display:inline-block}
+.clearfix{display:block}
+
+body{font-size:16px;}
+.wrapper {width: auto; max-width: 100% !important;}
+.container { width:100%;max-width:920px;margin:0 auto;padding:0;}
+.content {margin:30px auto;width:100%;}
+.video-show {background-color:#EEEEEE; border:1px solid #BFBFBF}
+.video-show > div{width:50% !important; float:left;}
+.video-show .video-text {padding: 20px 30px;font-size: 23px;line-height:1.5em;text-align: center;}
+.steps {margin-top:30px;}
+.title-list-content td, .title-list-content th{border:1px solid #BFBFBF;padding:8px 10px;}
+.title-list-content th{font-weight: bold;text-align: center;}
+.title-list {display: inline-block;margin:0 auto;background-color: #313131;padding:6px 10px;color:white;font-weight:bold;}
+.buttons {text-align:center;margin-top:30px;}
+.btn-send {border:none;background: none;}
+.steps-mobile{display: none}
+.slider-mobile {display: none;}
+@media only screen and (min-width:768px) and (max-width:959px){
+    .video-show .video-text {padding: 20px 30px;font-size: 20px;line-height:1.2em;}
+}
+@media only screen and (min-width:80px) and (max-width:767px){
+    .content {margin:10px auto;width:100%;}
+    .flexslider {display: none;}
+    .slider-mobile {display: block;}
+    .steps {display: none;}
+    .steps-mobile {display: block;}
+    .video-show {border:none;}
+    .video-show > div {float:none;width:100% !important;}
+    .video-show .video-text {padding: 12px 22px;font-size: 15px;text-align: center;font-weight: bold;}
+    .how-to-title {background-color:#EC4B6E;text-align:center;font-size:24px;font-weight: bold;padding:3px 0;color:white;}
+}

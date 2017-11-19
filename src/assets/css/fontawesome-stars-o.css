@@ -1,0 +1,59 @@
+.br-theme-fontawesome-stars-o .br-widget {
+  height: 28px;
+  white-space: nowrap;
+}
+.br-theme-fontawesome-stars-o .br-widget a {
+  font: normal normal normal 20px/1 FontAwesome;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  text-decoration: none;
+  margin-right: 2px;
+}
+.br-theme-fontawesome-stars-o .br-widget a:after {
+  content: '\f006';
+  color: #d2d2d2;
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-active:after {
+  content: '\f005';
+  color: #FE6718;
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-selected:after {
+  content: '\f005';
+  color: #FE6718;
+}
+.br-theme-fontawesome-stars-o .br-widget a.br-half:after {
+  content: '\f123';
+  color: #FE6718;
+}
+.br-theme-fontawesome-stars-o .br-widget .br-current-rating {
+  display: none;
+}
+.br-theme-fontawesome-stars-o .br-reverse a.br-half {
+  transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+}
+@media print {
+  .br-theme-fontawesome-stars-o .br-widget a:after {
+    content: '\f006';
+    color: black;
+  }
+  .br-theme-fontawesome-stars-o .br-widget a.br-active:after,
+  .br-theme-fontawesome-stars-o .br-widget a.br-selected:after {
+    content: '\f005';
+    color: black;
+  }
+  .br-theme-fontawesome-stars-o .br-widget a.br-half:after {
+    content: '\f123';
+    color: black;
+  }
+}
+#rating-total-wrapper .br-wrapper{display:inline-block;}
+#rating-total-wrapper span{vertical-align: top;padding-left:12px;}
+
+#rating-total-wrapper-mobile .br-wrapper{display:inline-block;}
+#rating-total-wrapper-mobile .br-widget a {font-size:15px;}
+#rating-total-wrapper-mobile span{vertical-align: top;padding-left:2px;font-size:15px;}
+#review-container-mobile li .br-widget a{font-size:12px;}
+#review-container-mobile span{vertical-align: top;padding-left:2px;font-size:13px;}
