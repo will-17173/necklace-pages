@@ -1,59 +1,59 @@
 $sprite-pc: '../images/sprite-pc.png';
-
+$bg-size: 300px 260px;
+$scale: 3.1;
 @font-face {
-  font-family: 'OptimaLT';
-  src: url('../fonts/OptimaLT.eot?#iefix') format('embedded-opentype'),  url('../fonts/OptimaLT.woff') format('woff'), url('../fonts/OptimaLT.ttf')  format('truetype'), url('../fonts/OptimaLT.svg#OptimaLT') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'OptimaLT';
+    src: url('../fonts/OptimaLT.eot?#iefix') format('embedded-opentype'), url('../fonts/OptimaLT.woff') format('woff'), url('../fonts/OptimaLT.ttf') format('truetype'), url('../fonts/OptimaLT.svg#OptimaLT') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.black-friday{
+.black-friday {
     background: url(../images/bg.jpg) center top no-repeat;
     font-family: 'OptimaLT';
     padding-bottom: 150px;
-    &-bg{
+    &-bg {
         padding-bottom: 248px;
         background: url(../images/bg-balloons.jpg) center bottom no-repeat;
     }
-    &-in{
+    &-in {
         width: 1366px;
-        margin:0 auto;
+        margin: 0 auto;
         padding-top: 570px;
         position: relative;
-        
-        .percent-off{
+        .percent-off {
             height: 477px;
-            .plist{
+            .plist {
                 text-align: center;
-                .item{
-                    width: 277px;
+                .item {
+                    width: 283px;
                     height: 155px;
                     background: url($sprite-pc) no-repeat;
                     display: inline-block;
                     margin: 0 46px;
                     text-indent: -999em;
                 }
-                .item.item2{
+                .item2 {
                     background-position: -300px 0;
                 }
-                .item.item2{
+                .item3 {
                     background-position: -600px 0;
                 }
             }
-            .discount-tips{
+            .discount-tips {
                 font-size: 32px;
                 text-align: center;
                 color: #c5af97;
                 padding: 20px 0;
             }
-            .countdown{
-                &-in{
+            .countdown {
+                &-in {
                     width: 520px;
                     height: 120px;
                     position: relative;
                     margin: 0 auto;
                     background: url($sprite-pc) 0 -180px no-repeat;
-                    div{
+                    div {
                         position: absolute;
                         top: 0;
                         width: 110px;
@@ -61,38 +61,35 @@ $sprite-pc: '../images/sprite-pc.png';
                         color: #c2ad96;
                         font-size: 60px;
                         font-family: Impact;
-                        text-align: center;
-                        letter-spacing: 10px;
+                        letter-spacing: 27px;
+                        text-indent: 15px;
                         height: 90px;
                         line-height: 90px;
                     }
-                    .days{
-                        left:0;
+                    .days {
+                        left: 0;
                     }
-                    .hours{
-                        left: 137px;
-                    }   
-                    .minutes{
-                        left: 273px;
+                    .hours {
+                        left: 132px;
                     }
-                    .seconds{
-                        left:410px;
+                    .minutes {
+                        left: 267px;
+                    }
+                    .seconds {
+                        left: 404px;
                     }
                 }
-                
             }
-
         }
-        .special-offer{
+        .special-offer {
             position: relative;
             height: 640px;
-            .img{
+            .img {
                 position: absolute;
                 top: 60px;
                 left: 15px;
-                
             }
-            .title{
+            .title {
                 background: url($sprite-pc) 0 -310px no-repeat;
                 width: 720px;
                 height: 60px;
@@ -101,7 +98,7 @@ $sprite-pc: '../images/sprite-pc.png';
                 left: 509px;
                 text-indent: -999em;
             }
-            .limit-time-sale{
+            .limit-time-sale {
                 text-indent: -999em;
                 background: url($sprite-pc) 0 -385px no-repeat;
                 width: 320px;
@@ -110,12 +107,12 @@ $sprite-pc: '../images/sprite-pc.png';
                 top: 185px;
                 position: absolute;
             }
-            .shop-btn{
+            .shop-btn {
                 text-indent: -999em;
                 position: absolute;
                 top: 400px;
                 left: 895px;
-                a{
+                a {
                     display: block;
                     width: 320px;
                     height: 60px;
@@ -123,17 +120,17 @@ $sprite-pc: '../images/sprite-pc.png';
                 }
             }
         }
-        .guarantee{
+        .guarantee {
             height: 89px;
             border-top: 1px solid #ddd;
             border-bottom: 1px solid #ddd;
-            .item{
+            .item {
                 width: 33%;
                 float: left;
                 position: relative;
                 text-indent: -999em;
-                &:after{
-                    content:' ';
+                &:after {
+                    content: ' ';
                     height: 41px;
                     position: absolute;
                     display: block;
@@ -142,69 +139,67 @@ $sprite-pc: '../images/sprite-pc.png';
                     left: 42px;
                 }
             }
-            .item1{
-                &:after{
+            .item1 {
+                &:after {
                     background-position: -350px -385px;
                     width: 340px;
                 }
             }
-            .item2{
+            .item2 {
                 width: 40%;
-                &:after{
+                &:after {
                     background-position: -350px -430px;
                     width: 410px;
                 }
             }
-            .item3{
+            .item3 {
                 width: 26.9%;
-                &:after{
+                &:after {
                     background-position: -350px -470px;
                     width: 340px;
                     top: 20px;
                 }
             }
-
-
         }
-        .shopping-for{
+        .shopping-for {
             margin-top: 55px;
-            .title{
+            .title {
                 margin-left: 315px;
                 width: 740px;
                 height: 120px;
                 background: url($sprite-pc) 0 -540px no-repeat;
                 text-indent: -999em;
             }
-            .plist{
+            .plist {
                 margin-top: 105px;
-                .item{
+                .item {
                     width: 50%;
-                    float:left;
+                    float: left;
                     height: 500px;
                     position: relative;
                     border-bottom: 1px solid #ddd;
-                    .col1{
+                    .col1 {
                         width: 300px;
                         float: left;
                     }
-                    .col2{
+                    .col2 {
                         float: left;
                         width: 340px;
                         color: #2f1914;
                         position: relative;
-                        .col2-title{
+                        .col2-title {
                             font-size: 30px;
                             font-weight: bold;
                             margin-top: 40px;
                         }
-                        .col2-desc{
+                        .col2-desc {
                             font-size: 24px;
                         }
-                        .bf-btn{
+                        .bf-btn {
                             position: absolute;
                             top: 305px;
                             left: 0;
-                            a{
+                            a {
                                 display: block;
                                 background: #2f1914;
                                 color: #fff;
@@ -216,13 +211,14 @@ $sprite-pc: '../images/sprite-pc.png';
                             }
                         }
                     }
-
                 }
-                .item1, .item3, .item5{
-                    &:before{
+                .item1,
+                .item3,
+                .item5 {
+                    &:before {
                         position: absolute;
                         display: block;
-                        content:'';
+                        content: '';
                         right: 0;
                         width: 1px;
                         border-right: 1px solid #ddd;
@@ -231,38 +227,37 @@ $sprite-pc: '../images/sprite-pc.png';
                     }
                 }
             }
-
         }
-        .style{
+        .style {
             margin-top: 60px;
             padding-bottom: 60px;
-            .title{
+            .title {
                 margin-left: 435px;
                 width: 495px;
                 height: 135px;
                 background: url($sprite-pc) 0 -670px no-repeat;
                 text-indent: -999em;
             }
-            .plist{
+            .plist {
                 margin-top: 125px;
             }
-            .item{
+            .item {
                 float: left;
                 text-align: center;
                 position: relative;
                 color: #2f1914;
-                .style-title{
+                .style-title {
                     font-size: 28px;
                     font-weight: bold;
                 }
-                .style-desc{
+                .style-desc {
                     font-size: 24px;
                     width: 230px;
                     margin: 30px auto 0;
                     line-height: 1.2;
                 }
-                .bf-btn{
-                    a{
+                .bf-btn {
+                    a {
                         display: block;
                         width: 240px;
                         height: 60px;
@@ -275,28 +270,363 @@ $sprite-pc: '../images/sprite-pc.png';
                     }
                 }
             }
-            .item1{
+            .item1 {
                 width: 360px;
             }
-            .item2{
+            .item2 {
                 width: 600px;
             }
-            .item3{
+            .item3 {
                 width: 400px;
             }
-            .item1, .item2{
-                &:before{
+            .item1,
+            .item2 {
+                &:before {
                     position: absolute;
                     display: block;
-                    content:'';
+                    content: '';
                     right: 0;
                     width: 1px;
                     border-right: 1px solid #ddd;
-                    height:595px;
+                    height: 595px;
                     top: 0;
                 }
             }
         }
     }
+}
 
+@media all and (max-width: 767px) {
+    .black-friday {
+        width: 100%;
+        overflow: hidden;
+        background-size: 165%;
+        margin-top: 85px;
+        padding-bottom: 20px;
+        .black-friday-bg {
+            padding-bottom: 78px;
+            background-size: 100%;
+        }
+        &-in {
+            width: 100%;
+            padding-top: 180px;
+            .percent-off {
+                height: 130px;
+                .plist {
+                    .item {
+                        width: 92px;
+                        height: 50px;
+                        margin: 0 8px;
+                        background-size: 300px 260px;
+                    }
+                    .item1 {
+                        background-position: 0 0;
+                    }
+                    .item2 {
+                        background-position: -97px 0;
+                    }
+                    .item3 {
+                        background-position: -193px 0;
+                    }
+                }
+                .discount-tips {
+                    font-size: 14px;
+                    padding: 5px 0;
+                }
+                .countdown {
+                    &-in {
+                        width: 170px;
+                        height: 39px;
+                        background-size: 300px 260px;
+                        background-position: 0 -58px;
+                        div {
+                            font-size: 14px;
+                            width: 36px;
+                            height: 29px;
+                            line-height: 29px;
+                            font-family: 'OptimaLT';
+                            letter-spacing: 10px;
+                            text-indent: 6px;
+                        }
+                        .hours {
+                            left: 44px;
+                        }
+                        .minutes {
+                            left: 89px;
+                        }
+                        .seconds {
+                            left: 133px;
+                        }
+                    }
+                }
+            }
+            .special-offer {
+                height: 200px;
+                .title {
+                    background-size: $bg-size;
+                    width: 720px / $scale;
+                    height: 60px / $scale;
+                    left: auto;
+                    right: 0;
+                    background-position: 0 -310px/$scale;
+                    top: 15px;
+                }
+                .img {
+                    left: 0;
+                    top: 34px;
+                    width: 60%;
+                }
+                .limit-time-sale {
+                    width: 320px / $scale;
+                    height: 141px / $scale;
+                    left: auto;
+                    right: 15px;
+                    top: 185px / $scale;
+                    background-size: $bg-size;
+                    background-position: 0 -385px / $scale;
+                }
+                .shop-btn {
+                    top: 400px / $scale;
+                    right: 20px;
+                    left: auto;
+                    a {
+                        width: 320px / $scale;
+                        height: 60px / $scale + 2px;
+                        background-position: -600px / $scale -180px / $scale;
+                        background-size: $bg-size;
+                    }
+                }
+            }
+            .guarantee {
+                height: 30px;
+                .item {
+                    &:after {
+                        height: 41px / $scale;
+                        top: 9px;
+                        left: 5px;
+                        background-size: $bg-size;
+                    }
+                }
+                .item1 {
+                    &:after {
+                        background-position: -350px / $scale -385px / $scale;
+                    }
+                }
+                .item2 {
+                    &:after {
+                        background-position: -350px / $scale -430px / $scale;
+                    }
+                }
+                .item3 {
+                    &:after {
+                        background-position: -350px / $scale -470px / $scale;
+                        top: 7px;
+                    }
+                }
+            }
+            .shopping-for {
+                margin-top: 20px;
+                .title {
+                    width: 740px / $scale;
+                    height: 120px / $scale;
+                    background-position: 0 -540px / $scale;
+                    background-size: $bg-size;
+                    left: 50%;
+                    margin-left: -740px / $scale / 2;
+                    position: relative;
+                }
+                .plist {
+                    margin-top: 20px;
+                    .item {
+                        width: 49.9%;
+                        text-align: center;
+                        .col1 {
+                            width: 100%;
+                            float: none;
+                            img {
+                                width: 80%;
+                            }
+                        }
+                        .col2 {
+                            float: none;
+                            width: 100%;
+                            padding: 0 10px;
+                            position: static;
+                            .col2-title {
+                                font-size: 16px;
+                            }
+                            .col2-desc {
+                                font-size: 14px;
+                            }
+                            .bf-btn {
+                                top: auto;
+                                bottom: 20px;
+                                width: 100%;
+                                a {
+                                    width: 80%;
+                                    height: 30px;
+                                    line-height: 30px;
+                                    font-size: 16px;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .style {
+                width: 100%;
+                margin-top: 30px;
+                padding-bottom: 0;
+                .title {
+                    width: 495px / $scale;
+                    height: 135px / $scale;
+                    background-size: $bg-size;
+                    background-position: 0 -670px / $scale;
+                    position: relative;
+                    left: 113px;
+                    margin-left: 0;
+                }
+                .plist {
+                    margin-top: 20px;
+                    .item {
+                        width: 33% !important;
+                        float: left;
+                        padding-bottom: 20px;
+                        &:before {
+                            height: 270px;
+                            // display: none !important;
+                        }
+                        .img {
+                            height: 170px;
+                        }
+                        img {
+                            width: 90%;
+                        }
+                        .style-title {
+                            font-size: 14px;
+                        }
+                        .style-desc {
+                            font-size: 14px;
+                            width: 100%;
+                            margin: 0;
+                        }
+                        .bf-btn {
+                            a {
+                                width: 80%;
+                                height: 30px;
+                                line-height: 30px;
+                                font-size: 14px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                    .item2 {
+                        margin-bottom: 10px;
+                        img {
+                            padding-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .black-friday {
+        width: 1366px;
+    }
+}
+
+@media all and (min-width: 414px) and (max-width: 767px) {
+    .black-friday {
+        &-in {
+            padding-top: 200px;
+        }
+    }
+}
+
+@media all and (max-width: 413px) {
+    .style {
+        .plist {
+            .item {
+                &:before {
+                    height: 320px;
+                }
+            }
+        }
+        .item {
+            height: 280px;
+        }
+        .bf-btn {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+}
+
+@media all and (max-width: 374px) {
+    .black-friday {
+        &-in {
+            padding-top: 156px;
+            .percent-off {
+                height: 121px;
+                .plist {
+                    .item {
+                        margin: 0 6px;
+                    }
+                }
+            }
+            .special-offer {
+                height: 175px;
+            }
+            .guarantee {
+                height: 103px;
+                .item {
+                    width: 100%;
+                    float: none;
+                    height: 30px;
+                    &:after {
+                        height: 25px;
+                        background-size: 566px 490px;
+                        left: 24px;
+                    }
+                }
+                .item1 {
+                    &:after {
+                        background-position: -213px -234px;
+                    }
+                }
+                .item2 {
+                    &:after {
+                        background-position: -213px -262px;
+                    }
+                }
+                .item3 {
+                    &:after {
+                        background-position: -213px -286px;
+                    }
+                }
+            }
+            .style {
+                .plist {
+                    .item {
+                        &:before {
+                            height: 320px;
+                        }
+                    }
+                }
+                .item {
+                    height: 310px;
+                }
+                .bf-btn {
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }

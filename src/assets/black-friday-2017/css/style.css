@@ -32,7 +32,7 @@
 }
 
 .black-friday-in .percent-off .plist .item {
-  width: 277px;
+  width: 283px;
   height: 155px;
   background: url("../images/sprite-pc.png") no-repeat;
   display: inline-block;
@@ -40,11 +40,11 @@
   text-indent: -999em;
 }
 
-.black-friday-in .percent-off .plist .item.item2 {
+.black-friday-in .percent-off .plist .item2 {
   background-position: -300px 0;
 }
 
-.black-friday-in .percent-off .plist .item.item2 {
+.black-friday-in .percent-off .plist .item3 {
   background-position: -600px 0;
 }
 
@@ -71,8 +71,8 @@
   color: #c2ad96;
   font-size: 60px;
   font-family: Impact;
-  text-align: center;
-  letter-spacing: 10px;
+  letter-spacing: 27px;
+  text-indent: 15px;
   height: 90px;
   line-height: 90px;
 }
@@ -82,15 +82,15 @@
 }
 
 .black-friday-in .percent-off .countdown-in .hours {
-  left: 137px;
+  left: 132px;
 }
 
 .black-friday-in .percent-off .countdown-in .minutes {
-  left: 273px;
+  left: 267px;
 }
 
 .black-friday-in .percent-off .countdown-in .seconds {
-  left: 410px;
+  left: 404px;
 }
 
 .black-friday-in .special-offer {
@@ -248,7 +248,9 @@
   font-size: 24px;
 }
 
-.black-friday-in .shopping-for .plist .item1:before, .black-friday-in .shopping-for .plist .item3:before, .black-friday-in .shopping-for .plist .item5:before {
+.black-friday-in .shopping-for .plist .item1:before,
+.black-friday-in .shopping-for .plist .item3:before,
+.black-friday-in .shopping-for .plist .item5:before {
   position: absolute;
   display: block;
   content: '';
@@ -319,7 +321,8 @@
   width: 400px;
 }
 
-.black-friday-in .style .item1:before, .black-friday-in .style .item2:before {
+.black-friday-in .style .item1:before,
+.black-friday-in .style .item2:before {
   position: absolute;
   display: block;
   content: '';
@@ -328,6 +331,302 @@
   border-right: 1px solid #ddd;
   height: 595px;
   top: 0;
+}
+
+@media all and (max-width: 767px) {
+  .black-friday {
+    width: 100%;
+    overflow: hidden;
+    background-size: 165%;
+    margin-top: 85px;
+    padding-bottom: 20px;
+  }
+  .black-friday .black-friday-bg {
+    padding-bottom: 78px;
+    background-size: 100%;
+  }
+  .black-friday-in {
+    width: 100%;
+    padding-top: 180px;
+  }
+  .black-friday-in .percent-off {
+    height: 130px;
+  }
+  .black-friday-in .percent-off .plist .item {
+    width: 92px;
+    height: 50px;
+    margin: 0 8px;
+    background-size: 300px 260px;
+  }
+  .black-friday-in .percent-off .plist .item1 {
+    background-position: 0 0;
+  }
+  .black-friday-in .percent-off .plist .item2 {
+    background-position: -97px 0;
+  }
+  .black-friday-in .percent-off .plist .item3 {
+    background-position: -193px 0;
+  }
+  .black-friday-in .percent-off .discount-tips {
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  .black-friday-in .percent-off .countdown-in {
+    width: 170px;
+    height: 39px;
+    background-size: 300px 260px;
+    background-position: 0 -58px;
+  }
+  .black-friday-in .percent-off .countdown-in div {
+    font-size: 14px;
+    width: 36px;
+    height: 29px;
+    line-height: 29px;
+    font-family: 'OptimaLT';
+    letter-spacing: 10px;
+    text-indent: 6px;
+  }
+  .black-friday-in .percent-off .countdown-in .hours {
+    left: 44px;
+  }
+  .black-friday-in .percent-off .countdown-in .minutes {
+    left: 89px;
+  }
+  .black-friday-in .percent-off .countdown-in .seconds {
+    left: 133px;
+  }
+  .black-friday-in .special-offer {
+    height: 200px;
+  }
+  .black-friday-in .special-offer .title {
+    background-size: 300px 260px;
+    width: 232.25806px;
+    height: 19.35484px;
+    left: auto;
+    right: 0;
+    background-position: 0 -100px;
+    top: 15px;
+  }
+  .black-friday-in .special-offer .img {
+    left: 0;
+    top: 34px;
+    width: 60%;
+  }
+  .black-friday-in .special-offer .limit-time-sale {
+    width: 103.22581px;
+    height: 45.48387px;
+    left: auto;
+    right: 15px;
+    top: 59.67742px;
+    background-size: 300px 260px;
+    background-position: 0 -124.19355px;
+  }
+  .black-friday-in .special-offer .shop-btn {
+    top: 129.03226px;
+    right: 20px;
+    left: auto;
+  }
+  .black-friday-in .special-offer .shop-btn a {
+    width: 103.22581px;
+    height: 21.35484px;
+    background-position: -193.54839px -58.06452px;
+    background-size: 300px 260px;
+  }
+  .black-friday-in .guarantee {
+    height: 30px;
+  }
+  .black-friday-in .guarantee .item:after {
+    height: 13.22581px;
+    top: 9px;
+    left: 5px;
+    background-size: 300px 260px;
+  }
+  .black-friday-in .guarantee .item1:after {
+    background-position: -112.90323px -124.19355px;
+  }
+  .black-friday-in .guarantee .item2:after {
+    background-position: -112.90323px -138.70968px;
+  }
+  .black-friday-in .guarantee .item3:after {
+    background-position: -112.90323px -151.6129px;
+    top: 7px;
+  }
+  .black-friday-in .shopping-for {
+    margin-top: 20px;
+  }
+  .black-friday-in .shopping-for .title {
+    width: 238.70968px;
+    height: 38.70968px;
+    background-position: 0 -174.19355px;
+    background-size: 300px 260px;
+    left: 50%;
+    margin-left: -119.35484px;
+    position: relative;
+  }
+  .black-friday-in .shopping-for .plist {
+    margin-top: 20px;
+  }
+  .black-friday-in .shopping-for .plist .item {
+    width: 49.9%;
+    text-align: center;
+  }
+  .black-friday-in .shopping-for .plist .item .col1 {
+    width: 100%;
+    float: none;
+  }
+  .black-friday-in .shopping-for .plist .item .col1 img {
+    width: 80%;
+  }
+  .black-friday-in .shopping-for .plist .item .col2 {
+    float: none;
+    width: 100%;
+    padding: 0 10px;
+    position: static;
+  }
+  .black-friday-in .shopping-for .plist .item .col2 .col2-title {
+    font-size: 16px;
+  }
+  .black-friday-in .shopping-for .plist .item .col2 .col2-desc {
+    font-size: 14px;
+  }
+  .black-friday-in .shopping-for .plist .item .col2 .bf-btn {
+    top: auto;
+    bottom: 20px;
+    width: 100%;
+  }
+  .black-friday-in .shopping-for .plist .item .col2 .bf-btn a {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .black-friday-in .style {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 0;
+  }
+  .black-friday-in .style .title {
+    width: 159.67742px;
+    height: 43.54839px;
+    background-size: 300px 260px;
+    background-position: 0 -216.12903px;
+    position: relative;
+    left: 113px;
+    margin-left: 0;
+  }
+  .black-friday-in .style .plist {
+    margin-top: 20px;
+  }
+  .black-friday-in .style .plist .item {
+    width: 33% !important;
+    float: left;
+    padding-bottom: 20px;
+  }
+  .black-friday-in .style .plist .item:before {
+    height: 270px;
+  }
+  .black-friday-in .style .plist .item .img {
+    height: 170px;
+  }
+  .black-friday-in .style .plist .item img {
+    width: 90%;
+  }
+  .black-friday-in .style .plist .item .style-title {
+    font-size: 14px;
+  }
+  .black-friday-in .style .plist .item .style-desc {
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+  }
+  .black-friday-in .style .plist .item .bf-btn a {
+    width: 80%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  .black-friday-in .style .plist .item2 {
+    margin-bottom: 10px;
+  }
+  .black-friday-in .style .plist .item2 img {
+    padding-top: 20px;
+  }
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+  .black-friday {
+    width: 1366px;
+  }
+}
+
+@media all and (min-width: 414px) and (max-width: 767px) {
+  .black-friday-in {
+    padding-top: 200px;
+  }
+}
+
+@media all and (max-width: 413px) {
+  .style .plist .item:before {
+    height: 320px;
+  }
+  .style .item {
+    height: 280px;
+  }
+  .style .bf-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 374px) {
+  .black-friday-in {
+    padding-top: 156px;
+  }
+  .black-friday-in .percent-off {
+    height: 121px;
+  }
+  .black-friday-in .percent-off .plist .item {
+    margin: 0 6px;
+  }
+  .black-friday-in .special-offer {
+    height: 175px;
+  }
+  .black-friday-in .guarantee {
+    height: 103px;
+  }
+  .black-friday-in .guarantee .item {
+    width: 100%;
+    float: none;
+    height: 30px;
+  }
+  .black-friday-in .guarantee .item:after {
+    height: 25px;
+    background-size: 566px 490px;
+    left: 24px;
+  }
+  .black-friday-in .guarantee .item1:after {
+    background-position: -213px -234px;
+  }
+  .black-friday-in .guarantee .item2:after {
+    background-position: -213px -262px;
+  }
+  .black-friday-in .guarantee .item3:after {
+    background-position: -213px -286px;
+  }
+  .black-friday-in .style .plist .item:before {
+    height: 320px;
+  }
+  .black-friday-in .style .item {
+    height: 310px;
+  }
+  .black-friday-in .style .bf-btn {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
  
 
